@@ -1,0 +1,73 @@
+.dataTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.dataTable th {
+    color: white;
+    border-color: white;
+}
+
+.dataTable td {
+    color: black;
+    font-weight: bold;
+}
+
+.dataTable th,
+.dataTable td {
+    border: 1px solid black;
+    padding: 4px;
+    /* Reduce the padding */
+    text-align: center;
+    font-size: 12px;
+    /* Reduce the font size */
+}
+
+/* Add background color to the header rows */
+.dataTable thead tr {
+    background-color: #f2f2f2;
+}
+
+/* Add alternating row background colors for better readability */
+.dataTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Add some styling to header cells */
+.dataTable th {
+    font-weight: bold;
+    background-color: rgb(40, 60, 98);
+}
+
+/* Add some spacing between header cells */
+.dataTable th[colspan="3"] {
+    padding: 2px 5px;
+    /* Reduce the padding */
+}
+
+/* Center the text in header cells */
+.dataTable th[colspan="3"],
+.dataTable th:not([colspan]) {
+    text-align: center;
+}
+
+/* Add spacing to data cells */
+.dataTable td {
+    padding: 4px 8px;
+    /* Reduce the padding */
+}
+
+/* Add CSS styles to the container */
+.table-container {
+    overflow-x: auto;
+    /* Enable horizontal scrolling if table width exceeds container width */
+    max-width: 100%;
+    /* Ensure the container does not exceed its parent's width */
+}
+
+/* Add CSS styles to the table */
+.dataTable {
+    width: 100%;
+    /* Ensure the table takes up the full width of the container */
+    /* Add any other table styles you may need */
+}
